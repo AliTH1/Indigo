@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo", "Indigo.csproj", "{BE3335FE-208B-4D33-A011-ACB0D5959C2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE3335FE-208B-4D33-A011-ACB0D5959C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3335FE-208B-4D33-A011-ACB0D5959C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3335FE-208B-4D33-A011-ACB0D5959C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3335FE-208B-4D33-A011-ACB0D5959C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E5D7713-3B12-46D8-87FF-EFFF77402099}
+	EndGlobalSection
+EndGlobal

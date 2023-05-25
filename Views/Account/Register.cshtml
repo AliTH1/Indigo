@@ -1,0 +1,126 @@
+﻿@using Indigo.ViewModels.Auth;
+@model RegisterVM
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+	integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+
+
+	<style>
+		.divider-text {
+			position: relative;
+			text-align: center;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+			.divider-text span {
+				padding: 7px;
+				font-size: 12px;
+				position: relative;
+				z-index: 2;
+			}
+
+			.divider-text:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				border-bottom: 1px solid #ddd;
+				top: 55%;
+				left: 0;
+				z-index: 1;
+			}
+
+		.btn-facebook {
+			background-color: #405D9D;
+			color: #fff;
+		}
+
+		.btn-twitter {
+			background-color: #42AEEC;
+			color: #fff;
+		}
+	</style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+	<div class="container">
+		<div class="card bg-light my-5">
+			<article class="card-body mx-auto" style="max-width: 400px;">
+				<h4 class="card-title mt-3 text-center">Create Account</h4>
+				<p class="text-center">Get started with your free account</p>
+
+				<div asp-validation-summary="ModelOnly"></div>
+				<form method="post">
+					<div class="form-group input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+						</div>
+						<input asp-for="FullName" class="form-control" placeholder="Full name">
+					</div> <!-- form-group// -->
+					<span class="text-danger" asp-validation-for="FullName"></span>
+
+					<div class="form-group input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+						</div>
+						<input asp-for="UserName" class="form-control" placeholder="User Name">
+					</div> <!-- form-group// -->
+						<span class="text-danger" asp-validation-for="UserName"></span>
+					<div class="form-group input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+						</div>
+						<input asp-for="Email" class="form-control" placeholder="Email address">
+
+					</div> <!-- form-group// -->
+						<span class="text-danger" asp-validation-for="Email"></span>
+					<div class="form-group input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+						</div>
+						<input asp-for="Password" class="form-control" placeholder="Create password">
+
+					</div> <!-- form-group// -->
+						<span class="text-danger" asp-validation-for="Password"></span>
+					<div class="form-group input-group mb-2">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+						</div>
+						<input asp-for="ConfirmPassword" class="form-control" placeholder="Repeat password">
+
+					</div> <!-- form-group// -->
+						<span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+					</div> <!-- form-group// -->
+					<p class="text-center">Have an account? <a asp-controller="Account" asp-action="Login">Log In</a> </p>
+				</form>
+			</article>
+		</div> <!-- card.// -->
+
+	</div>
+	<!--container end.//-->
+</body>
+</html>
+
