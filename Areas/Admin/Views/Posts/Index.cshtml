@@ -2,7 +2,7 @@
 @using Indigo.Models;
 @model PaginationVM<Post>
 @{
-    int count = 1;
+    int count = ((Model.CurrentPage - 1) * Model.Take) + 1;
 }
 <div class="container w-25">
     <form method="post" asp-area="Admin" asp-controller="Posts" asp-action="Index">
