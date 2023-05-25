@@ -1,16 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Indigo.Models
+namespace Indigo.Areas.Admin.ViewModels
 {
-    public class Post
+    public class UpdatePostVM
     {
         public int Id { get; set; }
-        [Required]
-        public string ImagePath { get; set; }
         [Required, MaxLength(30)]
         public string Title { get; set; }
         [Required, MaxLength(60)]
         public string Description { get; set; }
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = default;
+        [Required]
+        public IFormFile Photo { get; set; }
     }
 }

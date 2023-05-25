@@ -1,0 +1,42 @@
+﻿@using Indigo.Models;
+@model ICollection<Post>
+@{
+    int count = 1;
+}
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success" asp-controller="Posts" asp-action="Create">Create</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Post post in Model)
+        {
+            <tr>
+                <th scope="row">@count</th>
+                <td>@post.Title</td>
+                <td>
+                    <img src="~/assets/images/@post.ImagePath" style="width: 100px; height: 100px">
+                </td>
+                <td>
+                    <div>
+                        <a class="btn btn-warning text-light" asp-controller="Posts" asp-action="Update" asp-route-id="@post.Id">
+                            <i class="mdi mdi-grease-pencil"></i>
+                        </a>
+
+                        <a class="btn btn-danger text-light" asp-controller="Posts" asp-action="Delete" asp-route-id="@post.Id">
+                            <i class="mdi mdi-delete-forever"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            count++;
+        }
+    </tbody>
+</table>
