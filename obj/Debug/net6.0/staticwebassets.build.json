@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y6cMsfRm9nuqSv1yK35I/mvRj9USLhk/hAzuTTg6VOc=",
+  "Hash": "oy+c5zhRKfZYzdH5QmCFERUOW2LnE3SNvKvrJM/QZUM=",
   "Source": "Indigo",
   "BasePath": "_content/Indigo",
   "Mode": "Default",
@@ -62849,6 +62849,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\8658054a-6e07-4673-989a-900f7d631d121508750569162180678.jpg"
     },
     {
+      "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\b6745945-958d-47e7-8eb9-dadf325679f6abstract-futuristic-background-with-3d-design.jpg",
+      "SourceId": "Indigo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\",
+      "BasePath": "_content/Indigo",
+      "RelativePath": "assets/images/b6745945-958d-47e7-8eb9-dadf325679f6abstract-futuristic-background-with-3d-design.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\b6745945-958d-47e7-8eb9-dadf325679f6abstract-futuristic-background-with-3d-design.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\blog1.jpg",
       "SourceId": "Indigo",
       "SourceType": "Discovered",
@@ -62900,12 +62917,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog3.jpg"
     },
     {
-      "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\eabf1a85-aa8d-4e54-bf93-13bfb12fd20b1600w-HGxdJA_xIx0.webp",
+      "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\f0cfedf7-9fa8-439e-b237-63bbee50161fabstract-dark-red-4k-37-1920x1080.jpg",
       "SourceId": "Indigo",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\",
       "BasePath": "_content/Indigo",
-      "RelativePath": "assets/images/eabf1a85-aa8d-4e54-bf93-13bfb12fd20b1600w-HGxdJA_xIx0.webp",
+      "RelativePath": "assets/images/f0cfedf7-9fa8-439e-b237-63bbee50161fabstract-dark-red-4k-37-1920x1080.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -62914,7 +62931,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\eabf1a85-aa8d-4e54-bf93-13bfb12fd20b1600w-HGxdJA_xIx0.webp"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\f0cfedf7-9fa8-439e-b237-63bbee50161fabstract-dark-red-4k-37-1920x1080.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\fe9e8d78-4efd-414e-9e74-8409f0a2881d1600w-HGxdJA_xIx0.webp",
+      "SourceId": "Indigo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\",
+      "BasePath": "_content/Indigo",
+      "RelativePath": "assets/images/fe9e8d78-4efd-414e-9e74-8409f0a2881d1600w-HGxdJA_xIx0.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\fe9e8d78-4efd-414e-9e74-8409f0a2881d1600w-HGxdJA_xIx0.webp"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\Indigo\\wwwroot\\assets\\images\\hero.jpg",

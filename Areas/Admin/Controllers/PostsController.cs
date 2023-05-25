@@ -3,6 +3,7 @@ using Indigo.DAL;
 using Indigo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
 namespace Indigo.Areas.Admin.Controllers
@@ -19,13 +20,28 @@ namespace Indigo.Areas.Admin.Controllers
             _environment = environment;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int take = 8)
         {
-            return View(await _context.Posts.Where(i => !i.IsDeleted).ToListAsync());
+            ICollection<Post> posts = await _context.Posts
+                .Skip((page-1)*take)
+                .Take(take)
+                .ToListAsync();
+
+            int pageCount = await GetPageCount(take);
+            PaginationVM<Post> paginationVM = new()
+            {
+                Data = posts,
+                CurrentPage = page,
+                PageCount = pageCount,
+                HasPrevious = page > 1,
+                HasNext = page < pageCount,
+                Take = take
+            };
+            return View(paginationVM);
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
             return View(new CreatePostVM());
         }
@@ -150,6 +166,13 @@ namespace Indigo.Areas.Admin.Controllers
             _context.Posts.Remove(post);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+
+        public async Task<int> GetPageCount(int take)
+        {
+            int postCount = await _context.Posts.CountAsync();
+            return (int)Math.Ceiling((double)postCount / take);
         }
     }
 }
